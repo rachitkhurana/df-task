@@ -1,0 +1,47 @@
+$primary-color: rgb(37,82,125);
+
+
+
+.questionIndex {
+  margin-top: 20px;
+  color: $primary-color;
+  text-decoration: underline;
+  font-size: 1.8em;
+}
+
+.questionTxt {
+  padding-top: 20px;
+  font-size: 2em;
+  margin-top: 30px;
+}
+
+.optionList {
+
+  font-size: 1.5em;
+  margin-top: 60px;
+
+  .row {
+    margin-top: 10px;
+  }
+
+  .optionNumber {
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    border-radius: 50%;
+    background-color: $primary-color;
+    color: white;
+  }
+
+  .optionText {
+    height: 100%;
+    line-height: 36px;
+    border: $primary-color solid 1px;
+    padding-left: 10px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgb(197,230,255);
+    }
+  }
+}

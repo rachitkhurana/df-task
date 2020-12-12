@@ -1,0 +1,51 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+$primary-color: rgb(37,82,125);
+
+
+
+* button {
+  &:focus {
+    outline: none;
+  }
+}
+
+
+// ANGULAR MATERIAL OVER-WRITES
+.questionTabGroup {
+  > .mat-tab-header {
+    display: none;
+  }
+}
+
+.sectionTabGroup{
+  >.mat-tab-header{
+    >.mat-tab-label-container{
+      >.mat-tab-list{
+        >.mat-tab-labels{
+          >.mat-tab-label{
+            border-radius: 24px;
+            margin-left: -40px;
+            background-color: white;;
+            color: $primary-color;
+            opacity: 1;
+            border: 2px $primary-color solid;
+
+            &:nth-child(1){
+              margin-left: 0;
+            }
+          }
+          >.mat-tab-label.mat-tab-label-active{
+            background-color: $primary-color;;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}

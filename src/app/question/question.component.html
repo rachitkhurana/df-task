@@ -1,0 +1,92 @@
+<!-- {{ qIndex }}
+<br>
+{{ question.questionText }}
+<br>
+<br>
+{{ question.option1 }}
+<br>
+{{ question.option2 }}
+<br>
+{{ question.option3 }}
+<br>
+{{ question.option4 }} -->
+
+
+
+<div class="container-fluid questionRoot" *ngIf="question">
+  <div class="questionIndex">
+    QUESTION NUMBER # {{ qIndex+1 }}
+  </div>
+
+  <div class="questionTxt text-center">
+    {{ question['quesText'] }}
+  </div>
+
+  <div class="optionList">
+    <!-- option -->
+    <div class="row">
+      <div class="col-12">
+        <div class="row">
+          <div class="col-1 text-center">
+            <div class="optionNumber text-center">A</div>
+          </div>
+          <div class="col-11">
+            <div class="optionText">
+              {{ question.option1 | uppercase }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- option -->
+    <div class="row">
+      <div class="col-12">
+        <div class="row">
+          <div class="col-1 text-center">
+            <div class="optionNumber text-center">B</div>
+          </div>
+          <div class="col-11">
+            <div class="optionText">
+              {{ question.option2 | uppercase }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- option -->
+    <div class="row">
+      <div class="col-12">
+        <div class="row">
+          <div class="col-1 text-center">
+            <div class="optionNumber text-center">C</div>
+          </div>
+          <div class="col-11">
+            <div class="optionText">
+              {{ question.option3 | uppercase }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- option -->
+    <div class="row">
+      <div class="col-12">
+        <div class="row">
+          <div class="col-1 text-center">
+            <div class="optionNumber text-center">D</div>
+          </div>
+          <div class="col-11">
+            <div class="optionText">
+              {{ question.option4 | uppercase }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+

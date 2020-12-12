@@ -1,0 +1,76 @@
+<section class="examContainer container-fluid" id="examContainer" *ngIf="!submitted">
+
+  <div class="row">
+    <div class="stageArea col-xs-12 col-lg-9">
+      <!-- man section -->
+      <div class="row">
+        <div class="col-8 heading">
+          <span class="company">DESIGN FACILITY</span>
+          <span class="saperator">•</span>
+          <span class="testTitle" *ngIf="examData!=null"> {{ examData['exam']['examTitle'] | uppercase }} </span>
+        </div>
+        <div class="col-4 timeLeft text-right">
+          <span>Time Left: {{ getMinOfSec(timeLeft) }}m</span>
+        </div>
+      </div>
+
+      <mat-tab-group *ngIf="examData!=null" class="sectionTabGroup">
+        <ng-container *ngFor="let item of examData['exam']['sections']; let index = index">
+          <mat-tab label="{{ getFirstKeyOfObject(item) }}">
+            <!-- Question and answers goes here -->
+            <div class="row">
+              <div class="col-xs-12 col-lg-10 questionDiv">
+                <mat-tab-group [selectedIndex]="selectedQuestion" class="questionTabGroup">
+                  <mat-tab *ngFor="let question of item[getFirstKeyOfObject(item)]; let qIndex = index">
+                    <app-question [question]="question" [qIndex]="qIndex"></app-question>
+                  </mat-tab>
+                </mat-tab-group>
+              </div>
+
+              <div class="col-xs-12 col-lg-2 questionButtons text-center">
+                <div class="questionButtonHeading">
+                  Questions
+                </div>
+                <button *ngFor="let question of item[getFirstKeyOfObject(item)]; let index=index" (click)="selectedQuestion=index" [ngClass]="{'questionSelected':index===selectedQuestion}">
+                  {{ index+1 }}
+                </button>
+              </div>
+            </div>
+          </mat-tab>
+        </ng-container>
+      </mat-tab-group>
+
+
+      <div class="bottomButtons">
+        <div class="row h-100">
+          <div class="col-8 text-left h-100">
+            <button class="ml-4 px-4" (click)="sendAlert('Marked for review');">Mark for Review & Next</button>
+            <button class="ml-4 px-4" (click)="sendAlert('Response Cleared');">Clear Response</button>
+          </div>
+          <div class="col-4 text-right h-100">
+            <button class="px-4 mr-4 saveBtn" (click)="sendAlert('Saved');">Save and Next</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="sideArea col-xs-12 col-lg-3">
+      <!-- side ares -->
+      <app-sidebar (submitEvent)="submit($event)"></app-sidebar>
+    </div>
+  </div>
+</section>
+
+<div class="nonResponsiveDisclaimer d-grid d-lg-none">
+  <div class="text-center">
+    <div><img src="../../assets/rachit_memoji.png" alt=""></div>
+    <div>
+      This demo is <span class="text-danger bg-light px-2">not</span> mobile responsive.
+    </div>
+    <div>Please use Desktop/laptop to view the same.</div>
+  </div>
+</div>
+
+<div class="thankyouContainer" *ngIf="submitted">
+  <app-thankyou></app-thankyou>
+</div>

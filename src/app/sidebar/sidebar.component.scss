@@ -1,0 +1,82 @@
+$primary-color: rgb(37,82,125);
+$other-color: rgb(82, 162, 168);
+
+.sideBar {
+  padding-top: 15px;
+
+
+  .profileSection {
+
+    img {
+      height: 50px;
+      width: 50px;
+      border-radius: 8px;
+      border: 1px $other-color solid;
+      background-color: #cecece;
+    }
+
+    span {
+      font-weight: bold;
+      font-size: 1.3em;
+      margin-left: 15px;
+    }
+  }
+
+  .infoSection {
+
+    padding-top: 20px;
+
+    .row {
+
+      margin-top: 8px;
+
+      .qIcon {
+
+        div {
+           background-color: #444;
+           height: 30px;
+           width: 30px;
+           border-radius: 50%;
+           color: white;
+           line-height: 28px;
+           font-weight: bold;
+           border: 1px solid #333;
+        }
+      }
+
+      .qText {
+        padding-left: 0;
+        line-height: 30px;
+        font-size: 1.2em;
+      }
+    }
+  }
+
+  .nonResponsiveDisclaimer {
+    margin-top: 48px;
+  }
+
+
+  .bottomButton {
+    position: absolute;
+    width: 100%;
+    height: 90px;
+    bottom: 1vh;
+    left: 0;
+
+    button {
+      width: 80%;
+      height: 50px;
+      background-color: white;
+      border: 2px $other-color solid;
+      border-radius: 50px;
+      color: $other-color;
+      margin-top: 8px;
+      cursor: pointer;
+
+      &:hover {
+        filter: brightness(95%);
+      }
+    }
+  }
+}

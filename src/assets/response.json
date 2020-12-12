@@ -1,0 +1,112 @@
+{
+  "exam": {
+      "sections": [
+          {
+              "Section1": [
+                  {
+                      "_id": "5fb665d7e1e8ade077eb0227",
+                      "quesText": "quesText1",
+                      "option1": "city1",
+                      "option2": "model2",
+                      "option3": "cooperation3",
+                      "option4": "decade4",
+                      "answer": "hfB28LmGxCgVSLcQN6H3gYyR"
+                  },
+                  {
+                      "_id": "LJC3bSdJgMcqfvRxd6zBLnfn",
+                      "quesText": "familiar2",
+                      "option1": "dimension5",
+                      "option2": "employee6",
+                      "option3": "room7",
+                      "option4": "floor8",
+                      "answer": "ppMMSZnM79FG8Pu5v3yAJnyZ"
+                  },
+                  {
+                      "_id": "LJeV2VxgU8nrK5zHzdk62tuK",
+                      "quesText": "colorful3",
+                      "option1": "exit9",
+                      "option2": "flow10",
+                      "option3": "vehicle11",
+                      "option4": "leaf12",
+                      "answer": "GhRsV7BsxLEZCuZC9h85hBTG"
+                  },
+                  {
+                      "_id": "7We4H369YkvxUj5ECS3WGXbx",
+                      "quesText": "broccoli4",
+                      "option1": "characteristic13",
+                      "option2": "clarify14",
+                      "option3": "redeem15",
+                      "option4": "cylinder16",
+                      "answer": "E3TRSRXcAK67yBuZ429ZnYrB"
+                  }
+              ]
+          },
+          {
+              "Section2": [
+                  {
+                      "_id": "q3GjzA6eFKBX8u2p7znEP26j",
+                      "quesText": "crew5",
+                      "option1": "suggest17",
+                      "option2": "addition18",
+                      "option3": "baseball19",
+                      "option4": "forest20",
+                      "answer": "ycFtnC2wVPrLwu2fed6efLJg"
+                  },
+                  {
+                      "_id": "9MSHACnGjHUVXg3DV9GcAQV2",
+                      "quesText": "candle6",
+                      "option1": "boat21",
+                      "option2": "base22",
+                      "option3": "herb23",
+                      "option4": "fine24",
+                      "answer": "byYUuYLF5QeBWz32H79JLZtH"
+                  }
+              ]
+          },
+          {
+              "Section3": [
+                  {
+                      "_id": "hzJAqLRXSEhpH5aE5ee8aDs6",
+                      "quesText": "development7",
+                      "option1": "sale25",
+                      "option2": "agent26",
+                      "option3": "access27",
+                      "option4": "state28",
+                      "answer": "5fb665d7e1e8ade077eb0223"
+                  },
+                  {
+                      "_id": "5fb665d7e1e8ade077eb0229",
+                      "quesText": "association8",
+                      "option1": "curve29",
+                      "option2": "student30",
+                      "option3": "braid31",
+                      "option4": "lesson32",
+                      "answer": "nLXScycFYHfzyHm9tgJbDD9s"
+                  },
+                  {
+                      "_id": "ACceue4Dfp8XhcMAMysvtSBV",
+                      "quesText": "steel9",
+                      "option1": "sunshine33",
+                      "option2": "notice34",
+                      "option3": "seem35",
+                      "option4": "necklace36",
+                      "answer": "ASLf3e2KAPdVTm7bxg2X3hpP"
+                  },
+                  {
+                      "_id": "QqAF3HFTvft8H5XhDy2jLhWL",
+                      "quesText": "concrete10",
+                      "option1": "dream37",
+                      "option2": "include38",
+                      "option3": "faith39",
+                      "option4": "cottage40",
+                      "answer": "y53NkPWW3AadUrVPmHSk8nd4"
+                  }
+              ]
+          }
+      ],
+      "_id": "5fb665d8e1e8ade077eb022f",
+      "examTitle": "ExamDemo",
+      "examDurationInMinutes": 5,
+      "message": "Exam timer must be running and after completion of the timer redirect to the new component showing {Thank You}, {Object Mapping : Exam -> Section[] -> Questions[]}"
+  }
+}

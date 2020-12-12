@@ -1,0 +1,50 @@
+$primary-color: rgb(37,82,125);
+$other-color: rgb(82, 162, 168);
+
+
+.thankyouRoot {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: grid;
+  justify-content: center;
+  align-content: center;
+
+  background-color: $primary-color;
+
+  .image {
+    img {
+      width: 200px;
+      height: auto;
+
+      animation: dhakdhak 1s infinite;
+    }
+  }
+
+  .text {
+    color: white;
+    font-size: 2em;
+    font-weight: lighter;
+
+    div {
+      padding-top: 8px;;
+      font-size: 0.5em;
+    }
+  }
+}
+
+
+@keyframes dhakdhak {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
